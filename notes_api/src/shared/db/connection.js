@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 export function createConnection(){
 const promise = mongoose.connect(mongodb+srv://test:test123@cluster0.y6jwf5b.mongodb.net/notetakingappdb?retryWrites=true&w=majority,{maxPoolSize:5});
     promise.then(data=>{
-        console.log('DB URL is ', process.env.DBURL);
+        console.log('DB URL is mongodb+srv://test:test123@cluster0.y6jwf5b.mongodb.net/notetakingappdb?retryWrites=true&w=majority');
         console.log('Connection Created...');
         
     }).catch(err=>{
